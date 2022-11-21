@@ -1,12 +1,19 @@
-public abstract class Baking {
+public abstract class Cakes {
 
     private String name;
     private String baseFlavour;
 
-    public Baking(String name, String baseFlavour) {
+    private boolean healthier;
+
+    private boolean eggsBased;
+
+    public Cakes(String name, String baseFlavour, boolean healthier, boolean eggsBased) {
         this.name = name;
         this.baseFlavour = baseFlavour;
+        this.healthier = healthier;
+        this.eggsBased = eggsBased;
     }
+
 
     public String getName() {
         return this.name;
@@ -17,9 +24,29 @@ public abstract class Baking {
     }
 
     public String getBaseFlavour() {
-        return this.name;
+        return baseFlavour;
     }
 
+    public void setBaseFlavour(String baseFlavour) {
+        this.baseFlavour = baseFlavour;
+    }
+
+    public boolean isHealthier() {
+        return healthier;
+    }
+
+    private void setHealthier(boolean healthier) {
+        this.healthier = healthier;
+    }
+
+
+    public boolean isEggsBased() {
+        return eggsBased;
+    }
+
+    private void setEggsBased(boolean eggsBased) {
+        this.eggsBased = eggsBased;
+    }
 
 
 
