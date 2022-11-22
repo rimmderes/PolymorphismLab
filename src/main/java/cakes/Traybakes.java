@@ -25,9 +25,7 @@ public class Traybakes extends Cakes {
         if (eggsBased == "Yes") {
             return "This is not Vegan friendly";
         }
-
-
-
+        return "This is Vegan friendly";
     }
 
 
