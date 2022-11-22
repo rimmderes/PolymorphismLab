@@ -1,7 +1,7 @@
 import bakery.Bakery;
-import cakes.Cakes;
-import cakes.Cupcakes;
-import cakes.Traybakes;
+import cakes.Cake;
+import cakes.Cupcake;
+import cakes.Traybake;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,9 +24,9 @@ public class BakeryTest {
 
     @Test
     public void canAddCakes() {
-        Cakes cupcake1 = new Cupcakes("Victoria's Secret", "Vanilla", true,"Yes", "Strawberry Jam");
-        Cakes cupcake2 = new Cupcakes("Red Velvet", "Red Velvet", false,"No", "Milk Chocolate");
-        Cakes traybakes1 = new Traybakes("Dark squares", "chocolate", true, "No");
+        Cake cupcake1 = new Cupcake("Victoria's Secret", "Vanilla", true,"Yes", "Strawberry Jam");
+        Cake cupcake2 = new Cupcake("Red Velvet", "Red Velvet", false,"No", "Milk Chocolate");
+        Cake traybakes1 = new Traybake("Dark squares", "chocolate", true, "No");
         bakery.addCakes(cupcake1);
         bakery.addCakes(cupcake2);
         bakery.addCakes(traybakes1);

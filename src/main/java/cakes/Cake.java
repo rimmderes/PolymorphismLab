@@ -1,6 +1,8 @@
 package cakes;
 
-public abstract class Cakes {
+import interfaces.ISell;
+
+public abstract class Cake implements ISell {
 
     protected String name;
     protected String baseFlavour;
@@ -9,7 +11,7 @@ public abstract class Cakes {
 
     protected String eggsBased;
 
-    public Cakes(String name, String baseFlavour, boolean healthier, String eggsBased) {
+    public Cake(String name, String baseFlavour, boolean healthier, String eggsBased) {
         this.name = name;
         this.baseFlavour = baseFlavour;
         this.healthier = healthier;
@@ -56,6 +58,10 @@ public abstract class Cakes {
     }
 
     public abstract String protectingBakedGoods();
+
+    public String scanBarcode(int price) {
+        return this.name + "costs £" + price;
+    }
 
 
 

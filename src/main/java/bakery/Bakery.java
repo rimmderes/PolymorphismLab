@@ -1,6 +1,6 @@
 package bakery;
 
-import cakes.Cakes;
+import cakes.Cake;
 
 import java.util.ArrayList;
 
@@ -10,12 +10,12 @@ public class Bakery {
 
     private String name;
 
-    private ArrayList<Cakes> cakes;
+    private ArrayList<Cake> stock;
 
 
     public Bakery(String name){
         this.name = name;
-        this.cakes = new ArrayList<>();
+        this.stock = new ArrayList<>();
     }
 
     public String getName() {
@@ -26,20 +26,20 @@ public class Bakery {
         this.name = name;
     }
 
-    public ArrayList<Cakes> getCakes() {
-        return cakes;
+    public ArrayList<Cake> getStock() {
+        return stock;
     }
 
-    public void setCakes(ArrayList<Cakes> cakes) {
-        this.cakes = cakes;
+    public void setStock(ArrayList<Cake> cakes) {
+        this.stock = cakes;
     }
 
     public int countCakes (){
-        return this.cakes.size();
+        return this.stock.size();
     }
 
-    public void addCakes(Cakes cakes) {
-        this.cakes.add(cakes);
+    public void addCakes(Cake cakes) {
+        this.stock.add(cakes);
     }
 
 

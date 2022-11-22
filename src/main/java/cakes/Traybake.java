@@ -1,14 +1,12 @@
 package cakes;
 
-import cakes.Cakes;
-
 import java.util.ArrayList;
 
-public class Traybakes extends Cakes {
+public class Traybake extends Cake {
 
     private ArrayList<String> types;
 
-    public Traybakes(String name, String baseFlavour, boolean healthier, String eggbased) {
+    public Traybake(String name, String baseFlavour, boolean healthier, String eggbased) {
         super(name, baseFlavour, healthier, eggbased);
         this.types = new ArrayList<>();
     }

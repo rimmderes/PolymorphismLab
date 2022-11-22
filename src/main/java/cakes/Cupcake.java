@@ -1,15 +1,13 @@
 package cakes;
 
-import cakes.Cakes;
-
 import java.util.ArrayList;
 
-public class Cupcakes extends Cakes {
+public class Cupcake extends Cake {
 
     private ArrayList<String> toppings;
     private String filling;
 
-    public Cupcakes(String name, String baseFlavour, boolean healthier, String eggsbased, String filling) {
+    public Cupcake(String name, String baseFlavour, boolean healthier, String eggsbased, String filling) {
         super(name, baseFlavour, healthier, eggsbased);
         this.toppings = new ArrayList<>();
         this.filling = filling;
