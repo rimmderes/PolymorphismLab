@@ -1,13 +1,15 @@
+package cakes;
+
 public abstract class Cakes {
 
-    private String name;
-    private String baseFlavour;
+    protected String name;
+    protected String baseFlavour;
 
-    private boolean healthier;
+    protected boolean healthier;
 
-    private boolean eggsBased;
+    protected String eggsBased;
 
-    public Cakes(String name, String baseFlavour, boolean healthier, boolean eggsBased) {
+    public Cakes(String name, String baseFlavour, boolean healthier, String eggsBased) {
         this.name = name;
         this.baseFlavour = baseFlavour;
         this.healthier = healthier;
@@ -40,11 +42,11 @@ public abstract class Cakes {
     }
 
 
-    public boolean isEggsBased() {
+    public String isEggsBased() {
         return eggsBased;
     }
 
-    private void setEggsBased(boolean eggsBased) {
+    private void setEggsBased(String eggsBased) {
         this.eggsBased = eggsBased;
     }
 
