@@ -17,11 +17,11 @@ public class CupcakesTest {
             cupcakes.addTopping("Fairy Dust");
     }
 
-    @Test
-    public void canAddTopping() {
-    ArrayList addTopping = cupcakes.getToppings();
-        assertThat(addTopping).isEqualTo("Fairy Dust");
-    }
+//    @Test
+//    public void canAddTopping() {
+//    ArrayList addTopping = cupcakes.getToppings();
+//        assertThat(addTopping).isEqualTo("Fairy Dust");
+//    }
 
     @Test
     public void hasCasing() {
@@ -30,6 +30,28 @@ public class CupcakesTest {
         assertEquals(expected, actual);
     }
 
+    // overload testing
+    @Test
+    public void customerChoosesBakeryImage() {
+        String expected = "Choose bakery cupcake design .";
+        String actual = cupcakes.order("");
+        assertThat(expected).isEqualTo(actual);
+    }
+
+    public void customerHasOwnDesign() {
+        String expected = "inserted customer image Mum's face and your waiver number is 289834223.";
+        String actual = cupcakes.order("Mum's face", 289834223);
+        assertThat(expected).isEqualTo(actual);
+    }
+
+
+    // abstract method test
+    @Test
+    public void protectGoods() {
+        String expected = "Victoria's Secret has to be kept in the box provided";
+        String actual = cupcakes.protectingBakedGoods();
+        assertThat(expected).isEqualTo(actual);
+    }
 
 
 

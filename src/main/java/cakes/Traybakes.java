@@ -28,6 +28,9 @@ public class Traybakes extends Cakes {
         return "This is Vegan friendly";
     }
 
+    public String protectingBakedGoods() {
+        return String.format("%s has to be placed in the fridge immediately", this.name);
+    }
 
 
 

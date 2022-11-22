@@ -51,6 +51,13 @@ public abstract class Cakes {
     }
 
 
+    public String order() {
+        return "Cake Design or Customed Design";
+    }
+
+    public abstract String protectingBakedGoods();
+
+
 
 
 }

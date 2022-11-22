@@ -43,4 +43,17 @@ public class Cupcakes extends Cakes {
     }
 
 
+    public String order(String bakeryCupcakeDesignImage) {
+        return String.format("Choose bakery cupcake design %s.", bakeryCupcakeDesignImage);
+    }
+
+    public String order(String customerCupcakeImage, int waiverNumber) {
+        return String.format("inserted customer image %s and your waiver number is %s.", customerCupcakeImage, 289834223);
+    }
+
+    public String protectingBakedGoods() {
+        return String.format("%s has to be kept in the box provided", this.name);
+    }
+
+
 }

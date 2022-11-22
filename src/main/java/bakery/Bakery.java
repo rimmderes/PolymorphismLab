@@ -34,15 +34,23 @@ public class Bakery {
         this.cakes = cakes;
     }
 
+    public int countCakes (){
+        return this.cakes.size();
+    }
+
+    public void addCakes(Cakes cakes) {
+        this.cakes.add(cakes);
+    }
 
 
 
 
-//    if (this.name.equals("I Hate Vegans bakery.Bakery") && cake.isEggBased == false) {
+
+//    if (this.name.equals("I Hate Vegans bakery.Bakery") && cakes.isEggBased == false) {
 //        System.out.println("EVERYTHING MUST BE EGG BASED");
 //    } else {
-//        System.out.println(String.format("%s is egg based, adding to our cakes list", cake.getName()));
-//        this.cakes.add(cake);
+//        System.out.println(String.format("%s is egg based, adding to our cakes list", cakes.getName()));
+//        this.cakes.add(cakes);
 //    }
 
 
